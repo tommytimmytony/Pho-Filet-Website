@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(246, 246, 246);
+    min-height: 200vh;
+}
+header{
+    position: fixed;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 30px 50px;
+    background:rgba(255, 255, 255, 0.6);
+}
+
+header.sticky{
+   opacity: 0;
+}
+
+header.logo, .name{
+    position: relative;
+    font-weight: 700;
+    color: rgba(255, 0, 0, 0.76);
+    text-decoration: none;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header div{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_bar{
+    background-color: white;
+}
+.item_Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+}
+
+.item_container{
+    font-style: Helvetica, arial, sans-serif;
+}
+
+.main_container{
+    background-color: rgb(246, 246, 246);
+}
+.item_description{
+    font-style: italic;
+}
+
+.detail{
+    font-size: 2rem;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.menu_text{
+    font-weight: 700;
+    font-size: 3rem;
+}
