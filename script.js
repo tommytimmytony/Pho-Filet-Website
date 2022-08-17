@@ -1,5 +1,6 @@
 const itemContainer = document.getElementsByClassName("item_container");
 const mainContainer = document.querySelector(".main_container");
+const link = document.querySelector(".link");
 
 
 const Appetizers = {
@@ -22,7 +23,7 @@ const Appetizers = {
         description:  "Wonton filled with crab, green onion & cream cheese spread. Pinched into little purses, and deep fried",
     },
     item4: { 
-        name:  "A9 - Pot Stickers",
+        name:  "A9 - Pot Stickers(6pcs)",
         price: 6.50, 
         description: "Wonton filled with pork & vegetables",
     },
@@ -252,7 +253,6 @@ addSection(Lo_Mein);
 addSection(Vietnamese_Sandwiches);
 addSection(Vegetarian_Items);
 
-console.log(itemContainer);
 
 function addSection(section) {
   addLine(section.position);
@@ -266,11 +266,10 @@ function addLine(position){
     if (position === 0)
         return;
 
-    const html = `<hr>`;
-    mainContainer.insertAdjacentHTML('beforeend', html);
+    mainContainer.insertAdjacentHTML('beforeend', `<hr class="break_line">` );
 }
 function addTitle(title){
-    const html = `<span class="item_Title" style="font-size:2rem; font-weight: 700">${title}</span>
+    const html = `<span class="item_Title">${title}</span>
   
   <div class="item_container row d-flex justify-content-between
             align-items-baseline mx-auto gx-6">
@@ -280,9 +279,9 @@ function addTitle(title){
 function addNameAndPrice(item, position) {
      const html = `
         <div class="col-md-7">
-               <h1 style="font-size: 1.5rem;">${item.name}</h1>
+               <h1 class="item_name">${item.name}</h1>
             </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
+             <div class="item_price col-md-5">
                 ${item.price.toFixed(2)}
     `;
     itemContainer[position].insertAdjacentHTML('beforeend', html);
@@ -290,16 +289,58 @@ function addNameAndPrice(item, position) {
 
 function addDescription (description, position){
     if(description === "" ){
-        console.log("alskfja")
         return;
     }
     const html = ` </div>
-             <span class="item_description" style="font-size: 1rem; max-width: 50%;" >${description}</span >`;
+             <span class="item_description" style="max-width: 70%">${description}</span >`;
     itemContainer[position].insertAdjacentHTML('beforeend', html);
 }
 
 //sticky for nagivation bar
-window.addEventListener("scroll", function(){
-    const header = document.querySelector("header");
+document.addEventListener("scroll", function(){
+    const header = document.querySelector(".header");
     header.classList.toggle("sticky", window.scrollY > 0);
 })
+
+// dropdown for Opening hours
+document.addEventListener("click", e=> {
+  const isDropdownButton = e.target.matches("[data-dropdown-button");
+  if(!isDropdownButton && e.target.closest("[data-dropdown]" != null))
+    return;
+
+  let currentDropdown;
+  if(isDropdownButton){
+    currentDropdown = e.target.closest("[data-dropdown]");
+    currentDropdown.classList.toggle('active');
+  }
+})
+
+// time system
+
+let date = new Date();
+switch (date.getDay()) {
+  case 1:
+    link.textContent = "Closed aToday ⏷";
+    break;
+  case 2:
+    link.textContent = "Open sddToday ⏷";
+    break;
+  case 3:
+    link.textContent = "Open aslkdjflaskdj Today ⏷";
+    break;
+  case 4:
+    link.textContent = "Open fffffToday ⏷";
+    break;
+  case 5:
+    link.textContent = "Open iiiiiToday ⏷";
+    break;
+  case 6:
+    link.textContent = "Open dsfToday ⏷";
+     break;
+  case 0:
+    link.textContent = "Open sdfsdfToday ⏷";
+    break;
+}
+console.log(date.getDay());
+console.log(date.getDate());
+console.log(link.textContent);

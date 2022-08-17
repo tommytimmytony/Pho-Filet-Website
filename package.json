@@ -1,0 +1,25 @@
+{
+  "name": "pho-filet-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tommytimmytony/Pho-Filet-Website.git"
+  },
+  "keywords": [],
+  "author": "Tommy Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tommytimmytony/Pho-Filet-Website/issues"
+  },
+  "homepage": "https://github.com/tommytimmytony/Pho-Filet-Website#readme"
+}

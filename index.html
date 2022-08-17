@@ -11,353 +11,75 @@
 </head>
 <body>
     
-    <div class="container-fluid">
-      <header>
-         <div class="logo">
-         <img src="logo.jpg" alt="Logo" class="logo_img" width="100px"/>
-         <a href="#" class="name">Pho Filet</a>
+    <div class="container-fluid p-0">
+      <div class="header">
+         <div class="logo" style="display: flex;">
+         <a href="#"></a><img src="logo.jpg" alt="Logo" href="#" class="logo_img" style="cursor: pointer;" width="100px"/>
+         <a href="#"></a><p class="logo_name">Pho Filet</p>
          </div>
-          <div>
-               <p class="info">(210) 520-5630 <br>
+
+         
+          <div class="info_sections">
+              
+              <a href="tel:210-520-5630"><p class="info">(210) 520-5630 </a><br>
                   9910 TX-1604 Loop<br>
                   San Antonio, TX 78254
-               </p>
-            <a href="" class="detail" >Location</a>
+               </a>
+            <a  target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/3ZLpLwrPDEQkyua37">
+               <p class="direction">Direction</p>
+            </a>
             </div>
-      </header>
-      <!-- <div class="navBar-container" style="margin-left: 20%; margin-right: 20%;">
-        <div class="nav_bar m-5 d-flex justify-content-between align-items-center fw-normal mb-5 bg-white" style="cursor: pointer;">
-            <img src="logo.jpg" alt="Logo" class="logo " width="100px"/>
-            <h1 class="text-danger " style="font-size: 3.5rem; margin-left: 50px;">Pho Filet's Menu</h1>
-            <div>
-               <p class="text-center">(210) 520-5630 <br>
-                  9910 TX-1604 Loop<br>
-                  San Antonio, TX 78254
-               </p>
-            <a href="" class="detail text-center" >Location</a>
-            </div>
-        </div>      
-      </div> -->
+
+           <div class="dropdown" data-dropdown>
+               <button class="link" data-dropdown-button>Open Today 11:00 AM - 9:00PM &#x25BC </button>
+               <div class="dropdown_hour">
+                     <div class="hours row">
+                        <div class="hours col-md-3">Mon</div>
+                        <div class="hours col-md-9">Closed</div>
+                     </div>
+                     <div class="hours row">
+                        <div class="hours col-md-3">Tue</div>
+                        <div class="hours col-md-9">11:00 am - 9:00 pm</div>
+                     </div>
+                     <div class="hours row">
+                        <div class="hours col-md-3">Wed</div>
+                        <div class="hours col-md-9">11:00 am - 9:00 pm</div>
+                     </div>
+                     <div class="hours row">
+                        <div class="hours col-md-3">Fri</div>
+                        <div class="hours col-md-9">11:00 am - 9:00 pm</div>
+                     </div>
+                     <div class="hours row">
+                        <div class="hours col-md-3">Sat</div>
+                        <div class="hours col-md-9">11:00 am - 9:00 pm</div>
+                     </div>
+                      <div class="hours row">
+                        <div class="hours col-md-3">Sun</div>
+                        <div class="hours col-md-9">11:00 am - 9:00 pm</div>
+                     </div>
+               </div>
+           </div>
+      </div>
 
 
-        <div class="main_container row d-flex justify-content-center align-items-center mx-auto"
-        style="
-            display: grid;
-            gap: 1rem;
-            grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
-            align-items: center;
-            margin: auto;
-            max-width: 53%;
-            margin-top: 200px;
-            ">
+        <div class="main_container">
             <span class="menu_text text-center" >Menu</span>
-            <hr style="width: 40%">
+            <hr style="width: 40% ; justify-self: center;"> 
                                 <!-- Appetizers -->
             <!-- <span class="item_Title" style="font-size:2rem;">Appetizers</span>
            
             <div class="item_container row d-flex justify-content-between
             align-items-baseline mx-auto gx-6">
+
              <div class="col-md-7"> -->
-
-
-               <!-- <h1 style="font-size: 1.5rem;">A1-Spring-Rolls (2pcs)</h1>
+               <!-- <h1 class="item_name" style="font-size: 1.5rem;">A1-Spring-Rolls (2pcs)</h1>
             </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
+             <div class="item_price col-md-5 text-end" style="font-size: 1.75rem">
                 $6.50
             </div>
+            
              <span class="item_description" style="font-size: 1rem; max-width: 50%;" >Lean char-grilled pork, shrimp, lettuce, pickled carrots, cilantro, & rice vermicelli noodles wrapped in rice paper</span > -->
 
-
-
-
-
-
-
-
-
-
-             <!-- <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">A2-Vietnamese Egg(2pcs)</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $6.50
-            </div>
-             <span class="item_description" style="font-size: 1rem; max-width: 50%;" >Pork, carrots, onions,taro & cellophane noodles wrapped in crispy fried rice paper</span >
-
-              <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">A3-Crab Rangoon(6pcs)</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $6.50
-            </div>
-             <span class="item_description" style="font-size: 1rem; max-width: 50%;" >Wonton filled with crab, green onion & cream cheese spread. Pinched into little purses, and deep fried</span >
-
-               <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">A9 - Pot Stickers - available Steamed or Fried(6pcs)</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $6.50
-            </div>
-             <span class="item_description" style="font-size: 1rem; max-width: 50%;" >Wonton filled with pork & vegetables</span >
-
-               <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">E1-Edamame</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $6.50
-            </div>
-             <span class="item_description" style="font-size: 1rem; max-width: 50%;" >Boiled soybeans in the pod</span >
-            </div> -->
-
-
-            <!-- <h1 style="margin-left: 23%;">PHỞ</h1>
-           
-            <div class="row d-flex justify-content-between
-            align-items-baseline">
-             <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">P1 - Combination Beef Phở</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $14.95
-            </div>
-
-             <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">P10 - Chicken Phở</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-
-               <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">P11 - Vegetable Phở</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-
-               <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">P1 - Seafood Phở</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $14.95
-            </div>
-            </div>
-
-
-             <h1 style="margin-left: 23%;">VERMICELLI</h1>
-           
-            <div class="row d-flex justify-content-between
-            align-items-baseline">
-             <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">B1- Combination Vermicelli - chargrilled Pork, egg rolls, & shrimp</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $14.95
-            </div>
-
-             <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">B2-Egg Roll Vermicelli</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-
-               <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">B4-Char-grilled Pork Vermicelli</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-
-               <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">B5-Char-grilled Shrimp Vermicelli</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-
-             <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">B6-Stir-fried Beef Vermicelli</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-
-              <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">B7-Stir-fried
-                Chicken Vermicelli</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-
-              <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">B8-Stir-fried Tofu Vermicelli</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-            </div>
-
-            <h1 style="margin-left: 23%;">PLATES</h1>
-           
-            <div class="row d-flex justify-content-between
-            align-items-baseline">
-             <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">C1- Combination with Steamed Rice - chargrilled Pork,shrimp, & fried pan-egg</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $14.95
-            </div>
-
-             <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">C6-Stir-fried Beef with Steamed Rice</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-
-              <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">C7-Stir-fried
-                Chicken with Steamed Rice</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-
-              <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">C8-Stir-fried Tofu with Steamed Rice</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-
-            <h1 style="margin-left: 23%;">FRIED RICE</h1>
-           
-            <div class="row d-flex justify-content-between
-            align-items-baseline">
-             <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">F1-Combination Fried Rice</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $14.95
-            </div>
-
-             <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">F2-Chicken Fried Rice</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-
-              <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">F3-Beef Fried Rice</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-
-              <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">F4-Shrimp Fried Rice</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-            </div>
-
-             <h1 style="margin-left: 23%;">LO MEIN</h1>
-           
-            <div class="row d-flex justify-content-between
-            align-items-baseline">
-             <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">Combination Lo Mein</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $14.95
-            </div>
-
-             <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">Chicken Lo Mein</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-
-              <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">Beef Lo Mein</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-
-              <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">Shrimp Lo Mein</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-            </div>
-
-             <h1 style="margin-left: 23%; word-break: break-word; max-width: 50%;">VIETNAMESE SANDWICHES</h1>
-           
-            <div class="row d-flex justify-content-between
-            align-items-baseline">
-             <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">A12-Char-grilled Pork</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $7.50
-            </div>
-
-             <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">STofu - Stir-fried Tofu</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $7.50
-            </div>
-
-              <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">A14-Stir-fried Chicken</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $7.50
-            </div>
-
-              <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">A15-Stir-fried Beef</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $7.50
-            </div>
-            </div>
-
-             <h1>VEGETARIAN ITEMS</h1>
-           
-            <div class="row d-flex justify-content-between
-            align-items-baseline">
-             <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">ATofu-Vegetable Spring Rolls(2pcs)</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $6.50
-            </div>
-             <span class="item_description" style="font-size: 1rem; max-width: 50%;" >Tofu, lettuce, picked carrots, cilantro & rice vermicelli noodles wrapped in rice paper</span >
-
-             <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">Vegetable Lo Mein</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-
-              <div class="col-md-7">
-               <h2 style="font-size: 1.5rem;">Vegetable Pho</h2>
-            </div>
-             <div class="col-md-5 text-end" style="font-size: 1.75rem">
-                $12.95
-            </div>
-            </div>
-        </div> -->
 
             
     </div>
