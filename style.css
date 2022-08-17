@@ -55,8 +55,9 @@ header div{
     width: 100%;
 }
 
-.item_container{
-    font-style: Helvetica, arial, sans-serif;
+
+.item_name{
+    padding-top: 2.5rem;
 }
 
 .main_container{
@@ -67,7 +68,7 @@ header div{
     margin: auto;
     max-width: 53%;
     margin-top: 90px;
-    margin-bottom: 80px;
+    margin-bottom: 150px;
     background-color: rgb(246, 246, 246);
 }
 

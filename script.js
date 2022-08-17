@@ -29,7 +29,7 @@ const Appetizers = {
     },
     item5: {
         name:  "E1-Edamame",
-        price: 6.50, 
+        price: 5.99, 
         description:  "Boiled soybeans in the pod",
     }
   },
@@ -229,18 +229,47 @@ const Vegetarian_Items = {
   items: {
     item1: {
       name: "ATofu - Vegetable Spring Rolls(2pcs)",
-      price: 6.50,
-      description: "Tofu, lettuce, pickled carrots, cilantro & rice vermicelli noodles wrapped in rice paper",
+      price: 6.5,
+      description:
+        "Tofu, lettuce, pickled carrots, cilantro & rice vermicelli noodles wrapped in rice paper",
     },
     item2: {
       name: "Vegetable Lo Mein",
       price: 12.95,
-      description: "",
+      description: "- with Tofu (+ 2.00) <br> - without Tofu",
     },
     item3: {
       name: "Vegetable Pho",
       price: 12.95,
-      description: " - with Tofu (+ 2.00) <br> - without Tofu",
+      description: "- with Tofu (+ 2.00) <br> - without Tofu",
+    },
+  },
+};
+
+const Drinks = {
+  title: "Drinks",
+  position: 8,
+  items: {
+    item1: {
+      name: "Boba Drinks",
+      price: 5.99,
+      description:
+        "Strawberry, Watermelon, Mango, Coconut, PassionFruit, Peach, Taro, ThaiTea",
+    },
+    item2: {
+      name: "Vietnamese Coffeee",
+      price: 4.99,
+      description: "",
+    },
+    item3: {
+      name: "Hot Jasmine Tea",
+      price: 4.99,
+      description: "", 
+    },
+    item4: {
+      name: "Soda / Tea / Botteled Water",
+      price: 2.25,
+      description: "",
     },
   },
 };
@@ -252,7 +281,7 @@ addSection(Fried_Rice);
 addSection(Lo_Mein);
 addSection(Vietnamese_Sandwiches);
 addSection(Vegetarian_Items);
-
+addSection(Drinks);
 
 function addSection(section) {
   addLine(section.position);
@@ -288,11 +317,13 @@ function addNameAndPrice(item, position) {
 }
 
 function addDescription (description, position){
+   let html = "";
     if(description === "" ){
-        return;
+        html = `</div>`
     }
-    const html = ` </div>
+    else{   html = ` </div>
              <span class="item_description" style="max-width: 70%">${description}</span >`;
+  }
     itemContainer[position].insertAdjacentHTML('beforeend', html);
 }
 
