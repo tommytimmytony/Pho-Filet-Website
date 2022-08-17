@@ -320,25 +320,25 @@ document.addEventListener("click", e=> {
 let date = new Date();
 switch (date.getDay()) {
   case 1:
-    link.textContent = "Closed aToday ⏷";
+    link.textContent = "Closed Today ⏷";
     break;
   case 2:
-    link.textContent = "Open kgkgkgToday⏷";
+    link.textContent = "Open Today ⏷";
     break;
   case 3:
-    link.textContent = "Open aslkdjflaskdssToday ⏷";
+    link.textContent = "Open Today ⏷";
     break;
   case 4:
-    link.textContent = "Open fffffToday ⏷";
+    link.textContent = "Open Today ⏷";
     break;
   case 5:
-    link.textContent = "Open iiiiiToday ⏷";
+    link.textContent = "Open Today ⏷";
     break;
   case 6:
-    link.textContent = "Open dsfToday ⏷";
+    link.textContent = "Open Today ⏷";
      break;
   case 0:
-    link.textContent = "Open sdfsdfToday ⏷";
+    link.textContent = "Open Today ⏷";
     break;
 }
 console.log(date.getDay());
