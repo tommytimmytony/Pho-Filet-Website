@@ -42,7 +42,7 @@ const Pho = {
     item1: {
       name: "P1 - Beef Pho",
       price: 14.95,
-      description:"",
+      description: "",
     },
     item2: {
       name: "P10 - Chicken Pho",
@@ -52,7 +52,7 @@ const Pho = {
     item3: {
       name: "P11 - Vegetable Pho",
       price: 12.95,
-      description: "",
+      description: "- with Tofu (+ 2.00) <br> - without Tofu",
     },
     item4: {
       name: "P12 - Seafood Pho",
@@ -240,7 +240,7 @@ const Vegetarian_Items = {
     item3: {
       name: "Vegetable Pho",
       price: 12.95,
-      description: "",
+      description: " - with Tofu (+ 2.00) <br> - without Tofu",
     },
   },
 };
@@ -323,10 +323,10 @@ switch (date.getDay()) {
     link.textContent = "Closed aToday ⏷";
     break;
   case 2:
-    link.textContent = "Open sddToday ⏷";
+    link.textContent = "Open kgkgkgToday⏷";
     break;
   case 3:
-    link.textContent = "Open aslkdjflaskdj Today ⏷";
+    link.textContent = "Open aslkdjflaskdssToday ⏷";
     break;
   case 4:
     link.textContent = "Open fffffToday ⏷";
