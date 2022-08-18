@@ -348,7 +348,7 @@ document.addEventListener("click", e=> {
 
 // time system
 
-let date = new Date("1995-12-21T11:59:00");
+let date = new Date();
 openingHours(date);
 function openingHours(date){
   if(date.getHours() >= 21 || date.getHours() < 11){
