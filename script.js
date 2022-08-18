@@ -346,37 +346,37 @@ document.addEventListener("click", e=> {
   }
 })
 
-// time system
+// time system && down-triangle
+
 
 let date = new Date();
 openingHours(date);
 function openingHours(date){
   if(date.getHours() >= 21 || date.getHours() < 11){
-    link.textContent = "Closed ⏷";
+    link.textContent = "Closed ";
     return;
   }
-
 switch (date.getDay()) {
   case 1:
-    link.textContent = "Closed Today ⏷";
+    link.textContent = "Closed Today ";
     break;
   case 2:
-    link.textContent = "Open Today 11am-9pm⏷";
+    link.textContent = "Open Today 11am-9pm ";
     break;
   case 3:
-    link.textContent = "Open Today 11am-9pm⏷";
+    link.textContent = "Open Today 11am-9pm ";
     break;
   case 4:
-    link.textContent = "Open Today 11am-9pm⏷";
+    link.textContent = "Open Today 11am-9pm ";
     break;
   case 5:
-    link.textContent = "Open Today 11am-9pm⏷";
+    link.textContent = "Open Today 11am-9pm ";
     break;
   case 6:
-    link.textContent = "Open Today 11am-9pm⏷";
+    link.textContent = "Open Today 11am-9pm ";
      break;
   case 0:
-    link.textContent = "Open Today 11am-9pm⏷";
+    link.textContent = "Open Today 11am-9pm ";
     break;
 }
 }

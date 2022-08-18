@@ -124,11 +124,6 @@ header div{
 }
 
 
-/* .info.sticky, .dire{
-    font-size: 15px;
-    transition: 0.6s ease-out;
-} */
-
 
 .header{
     max-height: 123px;
@@ -154,6 +149,11 @@ header div{
     font-size: inherit;
     cursor: pointer;
     padding: 0;
+}
+
+.link::after{
+    font-size: 0.75rem;
+    content: '\25BC';
 }
 
 .dropdown.active > .link,
