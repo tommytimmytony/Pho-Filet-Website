@@ -18,12 +18,12 @@ const Appetizers = {
         description: "Pork, carrots, onions,taro & cellophane noodles wrapped in crispy fried rice paper",
     },
     item3: {
-        name:  "A3-Carb Rangoon(6pcs)",
+        name:  "A3-Crab Rangoon(6pcs)",
         price: 6.50,
         description:  "Wonton filled with crab, green onion & cream cheese spread. Pinched into little purses, and deep fried",
     },
     item4: { 
-        name:  "A9 - Pot Stickers(6pcs)",
+        name:  "A9 - Pot Stickers - Steamed or Fried (6pcs)",
         price: 6.50, 
         description: "Wonton filled with pork & vegetables",
     },
@@ -206,17 +206,17 @@ const Vietnamese_Sandwiches = {
       description: "",
     },
     item2: {
-      name: "STofu - Stir-fired Tofu",
+      name: "STofu - Stir-fried Tofu",
       price: 7.50,
       description: "",
     },
     item3: {
-      name: "A14- Stir-fired Chicken",
+      name: "A14- Stir-fried Chicken",
       price: 7.50,
       description: "",
     },
     item4: {
-      name: "A15 - Stir-fired Beef",
+      name: "A15 - Stir-fried Beef",
       price: 7.50,
       description: "",
     },
@@ -267,7 +267,7 @@ const Drinks = {
       description: "", 
     },
     item4: {
-      name: "Soda / Tea / Botteled Water",
+      name: "Soda / Tea / Bottled Water",
       price: 2.25,
       description: "",
     },
