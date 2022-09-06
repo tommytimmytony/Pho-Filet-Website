@@ -254,10 +254,10 @@ const Drinks = {
       name: "Boba Drinks",
       price: 5.99,
       description:
-        "Strawberry, Watermelon, Mango, Coconut, PassionFruit, Peach, Taro, ThaiTea",
+        "Strawberry, Watermelon, Mango, Coconut, PassionFruit, Peach, Taro, Thai Tea",
     },
     item2: {
-      name: "Vietnamese Coffeee",
+      name: "Vietnamese Coffee",
       price: 4.99,
       description: "",
     },
