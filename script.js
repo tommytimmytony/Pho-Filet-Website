@@ -352,8 +352,12 @@ document.addEventListener("click", e=> {
 let date = new Date();
 openingHours(date);
 function openingHours(date){
-  if(date.getHours() >= 21 || date.getHours() < 11){
+  if(date.getDay() != 0 && date.getHours() >= 21 || date.getHours() < 11){
     link.textContent = "Closed ";
+    return;
+  }
+  else if (date.getDay() == 0 && (date.getHours() >= 20 && date.getMinutes() > 30) || date.getHours() < 11) {
+    link.textContent = "Closed";
     return;
   }
 switch (date.getDay()) {
@@ -376,13 +380,14 @@ switch (date.getDay()) {
     link.textContent = "Open Today 11am-9pm ";
      break;
   case 0:
-    link.textContent = "Open Today 11am-9pm ";
+    link.textContent = "Open Today 11am-8:30pm ";
     break;
 }
 }
 console.log(date.getDay());
 console.log(date.getDate());
 console.log(date.getHours());
+console.log(date.getMinutes())
 console.log(date.get);
 console.log(date);
 console.log(link.textContent);
