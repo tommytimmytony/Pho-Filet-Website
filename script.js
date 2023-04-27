@@ -55,7 +55,7 @@ const Pho = {
       description: "- with Tofu (+ 2.00) <br> - without Tofu",
     },
     item4: {
-      name: "P12 - Seafood Pho",
+      name: "P12 - Shrimp Pho",
       price: 14.95,
       description: "",
     },
